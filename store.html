@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my first store</title>
+
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+	body {
+		background:url(west.jpg);
+	}
+		.uppermostlist{
+			background-color: pink;
+			height: 40px;
+			font-style:  bold;
+			padding-top: 10px;
+			}
+		.uppermostlist a {
+			text-decoration: none;
+			color:white;
+
+
+		}
+		.leftside{
+			float: left;
+			clear:both;
+
+		}
+		.leftside a {
+			margin: 10px;
+
+		}
+		.rightside {
+			float:right;
+		}
+		.rightside a {
+			margin: 10px;
+		}
+		.mainlist {
+			background-color: black;
+			height: 100px;
+			
+			width: 80%;
+			margin-left: 10%;
+			
+			
+
+		}
+		.mainlist a {
+			text-decoration: none;
+			color: white;
+			margin: 20px;
+			
+			border-radius:5px;
+			line-height: 40px;
+			display: inline-block;
+			padding: 5px;
+			
+		}
+		.mainlist a:hover {
+			background-color:orange;
+
+
+			
+		}
+
+		.searchform {
+			float: right;
+			margin-right: 30px;
+			margin-top: 30px;
+
+		}
+		.storename{
+			font-size: 3em;
+			font-style: bold;
+			background-color: pink;
+			height: 200px;
+			margin-top: -70px;
+		}
+		.storename h1 {
+			margin-left:250px;
+			padding-top: 50px;
+		}
+		.bigplay img {
+			max-width: 1125px;
+			max-height:600px;
+			margin-left: 10%;
+			margin-right: 10%;
+			margin-top: 10px;
+
+
+			
+		}
+		.smallerdisplays{
+			margin:0px 10% 0px 10%;
+
+		}
+		.smallerdisplays nav a img {
+			max-width: 300px;
+			max-height: 300px;
+			margin:30px;
+			border:solid 1px black;
+
+		}
+		.payhere {
+
+			position: absolute;
+
+			
+			
+		}
+		.payshere {
+			position: absolute;
+			float: right;
+			margin-left: 20px;
+		}
+		
+		.one {
+			float:left;
+			
+		}
+		.two {
+			float:left;
+
+		}
+		.three {
+			
+		}
+			
+			
+
+		.productdisplay {
+			margin-left: 10%;
+			margin-right: 10%;
+			width: 80%;
+		}
+		.mainproductdisplay {
+			display: grid;
+			grid-column-gap: 25px;
+			grid-row-gap: 50px;
+			grid-template-columns: 250px 250px 250px 250px;
+			margin-top: 20px;
+		
+
+		}
+
+		.mainproductdisplay div img {
+			border:solid 1px black;
+
+		}
+		.productcategories nav a {
+			text-decoration: none;
+			margin-right: 25px;
+			font-weight:  bold;
+			background-color: pink;
+			color:black;
+			padding:10px;
+			border-radius: 5px;
+			border:solid pink 1px;
+
+
+
+		}
+		.productcategories {
+			background-color: black;
+			height: 30px;
+			padding:30px;
+		}
+
+		.info  {
+			padding-top: 10px;
+			float:left;
+
+			
+		}
+
+		.info a {
+			color: pink;
+			text-decoration: none;
+			margin: 30px;
+
+		}
+
+		.info h4 {
+			margin-left: 20px;
+		}
+		.info ul li {
+			list-style: none;
+		}
+
+		.kontainer {
+			border:1px solid #efd6d6ad;
+			background-color: #efd6d6ad;
+			padding-bottom: 20px;
+		}
+		.foot {
+			margin-top:0px;
+			background-color: black;
+			width: 100%;
+			height: 250px;
+		}
+		.smallerstorename{
+			font-size: 2em;
+			font-weight:  bold;
+			color: pink;
+			float:right;
+			padding-right: 10px;
+			margin-top: 1px;
+
+		}
+		#address {
+			font-size: 0.5em;
+			font-weight: normal;
+			margin-top: 0px;
+			color: pink;
+
+		}
+
+		.description {
+			border-radius: 5px;
+			border:solid pink 1px;
+			background-color: pink;
+			margin-left: 15px;
+			height: 50px;
+			font-weight: bold;
+
+		}
+		.description a {
+			text-decoration: none;
+			color:black;
+			margin: 10px;
+			padding: 20px;
+
+
+		}
+
+
+		@media only screen and (min-width: 150px) and (max-width: 900px)
+		    {
+		    	
+		    	.uppermostlist{
+			background-color: pink;
+			
+			height:100px;
+			font-style:  bold;
+			
+			}
+		.uppermostlist a {
+			text-decoration: none;
+			color:white;
+
+
+		}
+		.leftside{
+			float: left;
+
+		}
+		.leftside a {
+			float: left;
+			color: black;
+
+		}
+		.rightside {
+			float: left;
+			
+		}
+		.rightside a {
+			
+			color: black;
+		   float: left;
+		    }
+
+		.mainlist {
+			background-color: black;
+			height: auto;
+			display: block;
+			width: 80%;
+			margin-left: 10%;
+			
+			
+
+		}
+		.mainlist a {
+			text-decoration: none;
+			color: white;
+			margin: 20px;
+			
+			border-radius:5px;
+			line-height: 40px;
+			
+			padding: 5px;
+
+			
+		}
+		.mainlist a:hover {
+			background-color:orange;
+
+
+
+			
+		}
+		.searchform{
+			display: none;
+		}
+
+		.storename{
+			font-size: 80%;
+			font-style: bold;
+			background-color: pink;
+			height: auto;
+			margin-top: auto;
+			text-align: center;
+		}
+		.storename h1 {
+			margin-left:auto;
+			padding-top: auto;
+		}
+
+		.bigplay img {
+			max-width: 80%;
+			max-height:auto;
+			margin:2px;
+			padding: 10px 10px 10px 20px;
+			
+
+
+			
+		}
+
+
+		.smallerdisplays{
+			margin:0px 10% 0px 10%;
+
+		}
+		.smallerdisplays nav a img {
+			max-width: 180px;
+			max-height: 180px;
+			margin:10px;
+			border:solid 1px black;
+
+		}
+
+		.productcategories nav a {
+			text-decoration: none;
+			margin: 10px;
+			font-weight:  bold;
+			background-color: pink;
+			color:black;
+			padding:10px;
+			
+			
+			display: block;
+
+
+
+		}
+		.productcategories {
+			background-color: black;
+			height: auto;
+			padding:10px;
+			
+		}
+		
+		
+		
+         
+		
+		.mainproductdisplay {
+			display: grid;
+			grid-column-gap:10px;
+			grid-row-gap: 10px;
+			grid-template-columns: auto;
+			margin-top: 10px;
+		
+
+		}
+
+		.mainproductdisplay div img {
+			border:solid 1px black;
+			max-width: 180px;
+			max-height: 180px;
+
+		}
+		.description {
+			margin-left:  10%;
+			margin-right: 10%;
+		}
+
+		.foot {
+			margin-top:0px;
+			background-color: black;
+			width: 100%;
+			height: 1200px;
+			
+		}
+		.smallerstorename {
+			text-align: center;
+		}			
+
+
+	}
+
+
+
+	</style>
+</head>
+<body>
+<header>
+	<nav class="uppermostlist">
+		<div class="leftside">
+			<a href="#">Home</a>
+		    <a href="#">My Account</a>
+	    </div>
+	    <div class="rightside">
+		    <a href="#">Login/SignUp</a>
+		    <a href="#">My Cart</a>
+		    <a href="#">Help</a>
+	    </div>
+	</nav>
+</header>
+<div class="storename">
+	<h1> Central Food Stores</h1>
+</div>
+
+
+
+
+<div class="kontainer">
+<div>
+	<nav class="mainlist">
+		<a href="#">VEGETABLES</a>
+		<a href="#">FRUITS</a>
+		<a href="#">FOOD</a>
+		<a href="#">CEREALS</a>
+		<a href="#">WHOLEGRAINS</a>
+		<a href="#">OTHERS</a>
+		<div class="searchform">
+		    <form>
+		    	<button>
+		    	Search
+		        </button>
+			
+			    <input type="text" name="searchterm" value="search for more here"/>
+		    </form>
+		    
+	    </div>
+	</nav>
+	
+</div>
+
+
+<div class="bigdisplaypics">
+	<div class="bigplay">
+		<img src="13.jpg" >
+	</div>
+
+	<div class="smallerdisplays">
+		<nav>
+			<div class="one">
+				<!--<div><h1 class="payhere">pay here</h1></div>-->
+			<a href="#">
+				<img src="7.jpg">
+				
+			</a></div>
+			<!--<div><h1 class="payhere">pay here</h1></div>
+		    </div>-->
+			<div class="two">
+				<!--<div ><h1 class="payhere">pay here</h1></div>-->
+			    <a href="#">
+				<img src="3.jpg">
+                
+			    </a>
+		    </div>
+		    <div class="three">
+		    	<!--<div><h1 class="payshere">Free Bonus on Every order today!!!!</h1></div>-->
+			<a href="#">
+				<img src="4.jpg">
+				
+			</a>
+		</div>
+
+		</nav>
+		
+	</div>
+</div>
+
+<div class="productdisplay">
+	<div class="productcategories">
+		<nav>
+			<a href="#">Featured Products</a>
+			<a href="#">New Products</a>
+			<a href="#">Popular Products</a>
+			<a href="#">Recipies(ideas)</a>
+			<a href="#">Daily Deal</a>
+			<a href="#">All Products</a>
+		</nav>
+	</div>
+	<div class="mainproductdisplay">
+		<div class="griditem">
+			<img src="11.jpg">
+			<div class="description">
+				<a href="#">APPLES<br>Shs:1000 each</a>
+			</div>
+
+		</div>
+		<div class="griditem">
+			<img src="9.jpg">
+			<div class="description">
+				<a href="#">G.NUTS<br>Shs:4000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="6.jpg">
+			<div class="description">
+				<a href="#">ORANGES<br>Shs:3000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="11.jpg">
+			<div class="description">
+				<a href="#">APPLES<br>Shs:1000 each</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="9.jpg">
+			<div class="description">
+				<a href="#">G.NUTS<br>Shs:4000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="5.jpg">
+			<div class="description">
+				<a href="#">MAIZE<br>Shs:1000 each</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="3.jpg">
+			<div class="description">
+				<a href="#">NUTS<br>Shs:3000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="8.jpg">
+			<div class="description">
+				<a href="#">APPLES<br>Shs:1000 each</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="7.jpg">
+			<div class="description">
+				<a href="#">GRAPES<br>Shs:1000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="4.jpg">
+			<div class="description">
+				<a href="#">GRAPES<br>Shs:1000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="7.jpg">
+			<div class="description">
+				<a href="#">GRAPES<br>Shs:1000 @ 1kg</a>
+			</div>
+		</div>
+		<div class="griditem">
+			<img src="8.jpg">
+			<div class="description">
+				<a href="#">APPLES<br>Shs:1000 each</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+
+
+<div class="foot">
+	<nav class="info">
+		
+		<h4><a href="#">Information</a></h4>
+		<ul>
+		<li><a href="#">News</a></li>
+		<li><a href="#">people</a></li>
+		<li><a href="#">Careers</a></li>
+		<li><a href="#">community</a></li>
+	    </ul>
+
+	</nav>
+
+	<nav class="info">
+		
+		<h4><a href="#">Customer Service</a></h4>
+		<ul>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">Agents</a></li>
+		<li><a href="#">Email</a></li>
+		<li><a href="#">Call</a></li>
+	    </ul>
+
+	</nav>
+
+	<nav class="info">
+		
+		<h4><a href="#">Extras</a></h4>
+		<ul>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">promotions</a></li>
+		<li><a href="#">Partners</a></li>
+		<li><a href="#">pay here</a></li>
+	    </ul>
+
+	</nav>
+
+	<nav class="info">
+		
+		<h4><a href="#">My Account</a></h4>
+		<ul>
+		<li><a href="#">signup</a></li>
+		<li><a href="#">Login/signin</a></li>
+		<li><a href="#">Privacy</a></li>
+		<li><a href="#">Help</a></li>
+	    </ul>
+
+	</nav>
+
+	<div class="smallerstorename">
+		<h1>Central Food Stores</h1>
+			<p id ="address">Located<br>Plot 23-29 Gayaza road Wakiso<br>Tel: +256759590397<br>Email:kasabat20@gmail.com</p>
+
+		
+	</div>
+
+</div>
+</body>
+</html>
